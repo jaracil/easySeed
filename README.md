@@ -1,6 +1,6 @@
 # easySeed
 
-EasySeed is a simple tool to generate a deterministic seed phrase for a wallet. It uses an easy to remember passPhrase to generate a seed phrase. The seed phrase is generated using the BIP39 standard.
+EasySeed is a simple tool to generate a deterministic seed phrase for a wallet. It uses an easy to remember passPhrase to generate a seed phrase. The seed phrase is generated using the [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) standard.
 
 It can generate 12 or 24 word seed phrases. The passPhrase can be any string of characters. The passPhrase is hashed using SHA256 to generate a 256 bit seed. The seed is then used to generate the seed phrase.
 
@@ -18,4 +18,16 @@ You can create a memorable passphrase based on a personal phrase that only you w
         Wallet 2: "MyDogBrunoBrunoBornIn2010!-wallet2"
         ... 
 
-Download compiled binary files here: https://github.com/jaracil/easySeed/releases/
+## Installation and Usage
+
+### Run directly with Go (Recommended - Most Secure)
+
+If you have Go installed (version 1.23.0 or later), you can run easySeed directly without downloading any binaries:
+
+```bash
+go run github.com/jaracil/easySeed@latest
+```
+
+This method is more secure as Go compiles the source code on your machine instead of running pre-compiled binaries.
+
+**Install Go:** https://golang.org/dl/
